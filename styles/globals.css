@@ -5,7 +5,7 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 47.4% 11.2%;
+    --foreground: 0 0% 18.4%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
@@ -19,21 +19,35 @@
     --card: 0 0% 100%;
     --card-foreground: 222.2 47.4% 11.2%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 223 100% 45%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
+    --secondary: 49 100% 47%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --accent: 210 40% 96.1%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
-    --destructive: 0 100% 50%;
+    --destructive: 0 68% 56%;
     --destructive-foreground: 210 40% 98%;
 
     --ring: 215 20.2% 65.1%;
 
     --radius: 0.5rem;
+
+    --success: 129 58% 61%;
+    --success-foreground: 0 0% 100%;
+
+    --info: 208 75% 59%;
+    --info-foreground: 0 0% 100%;
+
+    --warning: 43 100% 51%;
+    --warning-foreground: 0 0% 100%;
+
+    --danger: 0 68% 56%;
+    --danger-foreground: 210 40% 98%;
+
+    --dark-blue: 222 47% 11%;
   }
 
   .dark {
@@ -78,4 +92,28 @@
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/gilroy/Gilroy-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/gilroy/Gilroy-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+html {
+  font-family: "Gilroy";
 }
