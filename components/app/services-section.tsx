@@ -9,17 +9,20 @@ export default function ServicesSection() {
   return (
     <div className="flex flex-col items-center w-full">
       <h1 className="text-3xl font-bold">Services</h1>
-      <div className="grid grid-flow-col grid-rows-1">
+      <div className="grid grid-cols-12 grid-rows-1 gap-x-5">
         {siteConfig.servicesList.map((item, index) => (
-          <Link key={index} href={item.href}>
-            <div className="flex flex-col items-center justify-center p-4 bg-blue-200 rounded-full h-15 w-15 ">
+          <Link href={item.href}>
+            <div
+              key={index}
+              className="p-4 mx-auto bg-blue-200 rounded-full h-15 w-15"
+            >
               <Image
                 src={require(`@/public/eservicesicons/${item.image}`).default}
                 alt={item.category}
-                className="rounded-full w-14 h-14"
+                className=""
               />
-              <span className="mt-2">{item.category}</span>
             </div>
+            <span className="mt-2">{item.category}</span>
           </Link>
         ))}
       </div>
