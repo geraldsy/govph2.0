@@ -30,7 +30,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <>
       <html lang="en" suppressHydrationWarning>
-        <body className="flex flex-col justify-center min-h-screen antialiased bg-background">
+        <body className="flex flex-col mx-auto antialiased ">
           <SiteHeader />
           <div className="container flex-1 ">{children}</div>
           <SiteFooter />

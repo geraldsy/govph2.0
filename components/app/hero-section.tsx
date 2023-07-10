@@ -7,11 +7,7 @@ import SearchBar from "@/components/app/search-bar"
 
 export default function HeroSection() {
   return (
-    <section
-      className="h-screen snap-start"
-      id="hero-section"
-      data-aos="fade-up"
-    >
+    <section className="" id="hero-section" data-aos="fade-up">
       <div className="grid grid-cols-1 gap-y-5 md:grid-cols-2 gap-x-14">
         <Image src={heroImage} alt="hero Image" className="md:order-last" />
         <div className="space-y-5">

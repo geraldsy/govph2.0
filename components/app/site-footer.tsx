@@ -6,7 +6,7 @@ import republikangpilipinaslogo from "@/public/republikangpilipinaslogo-dark-bg.
 
 export function SiteFooter() {
   return (
-    <footer className="container w-full gap-5 py-16 text-white bg-darkblue ">
+    <footer className="container w-full gap-5 py-16 mt-5 text-white bg-darkblue ">
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
         <div className="mx-auto md:mx-0">
           <Image
